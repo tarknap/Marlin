@@ -857,7 +857,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          6000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          4000    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  100    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   6000    // X, Y, Z acceleration for travel (non printing) moves
 
@@ -871,7 +871,7 @@
  */
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK 10.0
+  #define DEFAULT_XJERK 7.0
   #define DEFAULT_YJERK DEFAULT_XJERK
   #define DEFAULT_ZJERK DEFAULT_XJERK // Must be same as XY for delta
 
