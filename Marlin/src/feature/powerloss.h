@@ -22,7 +22,7 @@
 #pragma once
 
 /**
- * power_loss_recovery.h - Resume an SD print after power-loss
+ * feature/powerloss.h - Resume an SD print after power-loss
  */
 
 #include "../sd/cardreader.h"
@@ -58,7 +58,7 @@ typedef struct {
 
   uint16_t feedrate;
 
-  #if EXTRUDERS > 1
+  #if HAS_MULTI_EXTRUDER
     uint8_t active_extruder;
   #endif
 
